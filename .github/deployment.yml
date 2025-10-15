@@ -1,0 +1,16 @@
+name: deployment on docker hub
+on:
+  push: 
+    branches:
+      - main
+    path-ignore:
+      - '.github/workflows/*'
+      - README.md
+  workflow_dispatch:
+
+jobs:
+  docker-setup:
+    runs-on: self_hosted
+    steps:
+      - name: check the runner hellow workflow_dispatch
+        run: echo "hellow world"
