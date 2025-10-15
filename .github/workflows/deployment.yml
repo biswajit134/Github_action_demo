@@ -3,9 +3,9 @@ on:
   push: 
     branches:
       - main
-    path-ignore:
-      - '.github/workflows/*'
-      - README.md
+    # path-ignore:
+    #   # - '.github/workflows/*'
+    #   - README.md
   workflow_dispatch:
 
 jobs:
