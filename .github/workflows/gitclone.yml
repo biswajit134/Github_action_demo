@@ -1,0 +1,17 @@
+name: cloneing the repo
+on:
+  push: 
+    branches:
+      - main
+    # path-ignore:
+    #   # - '.github/workflows/*'
+    #   - README.md
+  workflow_dispatch:
+
+jobs:
+  git-clone:
+    runs-on: myrunner
+    steps:
+        - name: Git clone 
+          uses: actions/checkout@v3
+        - run: cd Github_action_demo
