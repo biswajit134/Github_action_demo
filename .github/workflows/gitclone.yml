@@ -13,5 +13,5 @@ jobs:
     runs-on: myrunner
     steps:
         - name: Git clone 
-          uses: actions/checkout@v3
-        - run: cd Github_action_demo
+          run: actions/checkout@v3
+        - run: cd $(pwd)/Github_action_demo
