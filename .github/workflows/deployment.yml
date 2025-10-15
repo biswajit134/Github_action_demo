@@ -10,7 +10,7 @@ on:
 
 jobs:
   docker-setup:
-    runs-on: self_hosted
+    runs-on: myrunner
     steps:
       - name: check the runner hellow workflow_dispatch
         run: echo "hellow world"
